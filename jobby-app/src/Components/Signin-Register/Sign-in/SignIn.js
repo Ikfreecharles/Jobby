@@ -11,6 +11,7 @@ function SignIn() {
                   name="email"
                   id="email"
                   placeholder="Enter email address"
+                  required
                />
             </label>
             <label htmlFor="password">
@@ -20,6 +21,7 @@ function SignIn() {
                   name="password"
                   id="password"
                   placeholder="Password"
+                  required
                />
             </label>
             <button>Submit</button>
