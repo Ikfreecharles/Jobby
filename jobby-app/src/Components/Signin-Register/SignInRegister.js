@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import SignIn from "./Sign-in/SignIn";
 import Register from "./Register/Register";
+import Jobby from "../../Images/Jobby.png"
+import "./signInRegister.css";
 
 function SignInRegister({ handleSignIn }) {
    const [Option, setOption] = useState("signin");
@@ -19,7 +21,7 @@ function SignInRegister({ handleSignIn }) {
                <p onClick={() => handleClick("register")}>Register</p>
             </div>
             <div className="sir-logo">
-               <img src="" alt="" />
+               <img src={Jobby} alt="logo"/>
             </div>
             {Option === "signin" && <SignIn handleSignIn={handleSignIn} />}
             {Option === "register" && <Register />}

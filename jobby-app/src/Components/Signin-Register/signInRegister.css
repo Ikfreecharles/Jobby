@@ -1,0 +1,35 @@
+.sir-inner-container{
+    background-image: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.23853291316526615) 26%,
+        rgba(0, 30, 88, 0.5970763305322129) 63%
+      ),
+      url(../../Images/AdobeStock_229549310.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  
+  }
+  
+.sir-logo img{
+    max-width: 200px;
+    margin-left: 45%;
+    margin-right: 40%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.sir-sign-in-register{
+    margin-left: 48%;
+    display: flex;
+    flex-direction: row;
+    width: 10rem;
+    justify-content: space-between;
+   padding-top: 1rem;
+}
+.sir-sign-in-register p{
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
