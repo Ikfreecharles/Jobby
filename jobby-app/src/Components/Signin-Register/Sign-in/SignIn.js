@@ -1,6 +1,10 @@
 import "./signIn.css";
 
-function SignIn() {
+function SignIn({ handleSignIn }) {
+   const handleFormSubmit = (e) => {
+      e.preventDefault();
+      handleSignIn(true);
+   };
    return (
       <article className="si-outer-div">
          <form>
@@ -24,7 +28,13 @@ function SignIn() {
                   required
                />
             </label>
-            <button>Submit</button>
+            <button
+               onClick={(e) => {
+                  handleFormSubmit(e);
+               }}
+            >
+               Submit
+            </button>
          </form>
       </article>
    );

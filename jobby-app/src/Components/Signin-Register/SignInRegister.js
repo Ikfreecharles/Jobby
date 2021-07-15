@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import SignIn from "./Sign-in/SignIn";
 import Register from "./Register/Register";
 
-function SignInRegister() {
+function SignInRegister({ handleSignIn }) {
    const [Option, setOption] = useState("signin");
    const handleClick = (option) => {
       if (option === "signin") {
@@ -21,7 +21,7 @@ function SignInRegister() {
             <div className="sir-logo">
                <img src="" alt="" />
             </div>
-            {Option === "signin" && <SignIn />}
+            {Option === "signin" && <SignIn handleSignIn={handleSignIn} />}
             {Option === "register" && <Register />}
          </div>
       </article>

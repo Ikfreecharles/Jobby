@@ -1,7 +1,8 @@
-import "./App.css";
+import { useState } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 // import componenets
+import "./App.css";
 import Nav from "./Components/Nav/Nav";
 import SignInRegister from "./Components/Signin-Register/SignInRegister";
 import JobSearch from "./Components/Job-Search/JobSearch";
@@ -11,15 +12,37 @@ import ApplicationSuccess from "./Components/Application-Success/ApplicationSucc
 import Message from "./Components/Message/Message";
 
 function App() {
+   const [SignInIsTrue, setSignInIsTrue] = useState(false);
+   const handleSignIn = (childResp) => {
+      setSignInIsTrue(childResp);
+   };
+
    return (
       <main>
          <BrowserRouter>
-            <Nav />
+            <Nav SignInIsTrue={SignInIsTrue} handleSignIn={handleSignIn} />
             <Switch>
-               <Route path="/signin" component={SignInRegister} />
+               <Route
+                  path="/signin"
+                  render={() => <SignInRegister handleSignIn={handleSignIn} />}
+               ></Route>
                <Route path="/jobsearch" component={JobSearch} />
                <Route path="/notification" component={Notification} />
-               <Route path="/application" component={ApplicationForm} exact />
+               {SignInIsTrue ? (
+                  <Route
+                     path="/application"
+                     component={ApplicationForm}
+                     exact
+                  />
+               ) : (
+                  <Route
+                     path="/signin"
+                     render={() => (
+                        <SignInRegister handleSignIn={handleSignIn} />
+                     )}
+                  ></Route>
+               )}
+
                <Route
                   path="/application/success"
                   component={ApplicationSuccess}

@@ -7,8 +7,9 @@ import { IoNotifications, IoPerson } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import ProfileDropdown from "./Profile-Dropdown/ProfileDropdown";
 
-function Nav() {
+function Nav({ SignInIsTrue, handleSignIn }) {
    const [ShowProfile, setShowProfile] = useState(false);
+
    useEffect(() => {
       setShowProfile(false);
       return () => {
@@ -28,22 +29,32 @@ function Nav() {
                <li>For Companies</li>
             </ul>
          </div>
-         <div className="n-logo">
-            <Link to="/notification n-links">
-               {" "}
-               <IoNotifications />
+         {SignInIsTrue ? (
+            <div className="n-icons">
+               <Link to="/notification" className="n-links">
+                  {" "}
+                  <IoNotifications />
+               </Link>
+               <Link to="/message" className="n-links">
+                  <MdEmail />
+               </Link>
+               <IoPerson
+                  onClick={() => {
+                     setShowProfile((ShowProfile) => !ShowProfile);
+                  }}
+                  className="n-links"
+               />
+               {ShowProfile && <ProfileDropdown handleSignIn={handleSignIn} />}
+            </div>
+         ) : (
+            <Link to="/signin">
+               <div>
+                  <span>SignIn</span>
+                  <span>/</span>
+                  <span>Register</span>
+               </div>
             </Link>
-            <Link to="/message n-links">
-               <MdEmail />
-            </Link>
-            <IoPerson
-               onClick={() => {
-                  setShowProfile((ShowProfile) => !ShowProfile);
-               }}
-               className="n-links"
-            />
-            {ShowProfile && <ProfileDropdown />}
-         </div>
+         )}
       </section>
    );
 }

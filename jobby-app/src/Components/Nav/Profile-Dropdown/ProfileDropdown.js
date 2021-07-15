@@ -1,6 +1,6 @@
 import "./profileDropdown.css";
 
-function ProfileDropdown() {
+function ProfileDropdown({ handleSignIn }) {
    return (
       <div className="pd-container">
          <div className="pd-item">
@@ -27,7 +27,9 @@ function ProfileDropdown() {
             <img src="" alt="" />
             <p>Contact us</p>
          </div>
-         <div className="pd-logout"></div>
+         <div className="pd-logout" onClick={() => handleSignIn(false)}>
+            <p>Logout</p>
+         </div>
       </div>
    );
 }
