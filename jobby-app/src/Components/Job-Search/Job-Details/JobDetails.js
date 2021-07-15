@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+
+//import components and css
 import "./jobDetails.css";
 
 function JobDetails({ handleClick }) {
@@ -24,7 +27,9 @@ function JobDetails({ handleClick }) {
          <p>HSH Soft -and Harware Company Ltd</p>
          <p>Berlin, Germany</p>
          <div className="jd-btn-div">
-            <button className="jd-btn">Apply now</button>
+            <Link to="/application">
+               <button className="jd-btn">Apply now</button>
+            </Link>
             <button className="jd-fav-btn">
                <img src="" alt="" />
             </button>

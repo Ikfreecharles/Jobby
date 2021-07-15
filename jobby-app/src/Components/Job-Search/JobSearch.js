@@ -25,11 +25,11 @@ function JobSearch() {
          <section className="js-main row">
             <div
                onClick={() => setShowIsTrue((ShowIsTrue) => !ShowIsTrue)}
-               className="col-md-5"
+               className="col-md-6"
             >
                <JobCard />
             </div>
-            <div className="col-md-7">
+            <div className="col-md-6">
                {ShowIsTrue && <JobDetails handleClick={handleClick} />}
             </div>
          </section>
