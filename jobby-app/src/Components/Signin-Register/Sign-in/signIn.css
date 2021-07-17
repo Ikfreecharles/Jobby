@@ -1,12 +1,13 @@
 .si-outer-div {
   display: flex;
-  flex-direction: column;
+  padding: 0rem 2rem;
 }
 form {
   width: auto;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  flex-basis: 40rem;
 }
 .si-email,
 .si-password {
@@ -29,9 +30,9 @@ form input {
 }
 
 form input::placeholder {
-  color: var(--brand-white);
+  color: var(--brand-lightgrey);
   font-style: italic;
-  font-weight: 600;
+  font-weight: 200;
 }
 
 label {
@@ -56,4 +57,8 @@ label {
   padding: 0.9rem 3rem;
   font-weight: 600;
   border-radius: 5px;
+}
+.si-outer-div button:hover{
+    background-color: var(--brand-blue);
+    transition: all 2s ease-in-out;
 }

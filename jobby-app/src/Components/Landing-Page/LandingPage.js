@@ -2,9 +2,9 @@ import React from "react";
 
 function LandingPage() {
    return (
-      <div>
+      <main>
          <h1>This is the landing page</h1>
-      </div>
+      </main>
    );
 }
 
