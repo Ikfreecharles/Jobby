@@ -23,6 +23,9 @@ function Nav({ SignInIsTrue, handleSignIn }) {
          </div>
          <div className="n-menu">
             <ul>
+               <Link to="/" className="n-jobsearch">
+                  <li>Home</li>
+               </Link>
                <Link to="/jobsearch" className="n-jobsearch">
                   <li>Job Search</li>
                </Link>
