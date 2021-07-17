@@ -22,14 +22,14 @@
 
 .sir-sign-in-register {
    display: flex;
-   width: 25rem;
+   width: 30rem;
    justify-content: space-between;
    padding-top: 1rem;
    margin: 0 auto;
 }
 .sir-sign-in-register p {
-   font-size: 1.2rem;
-   font-weight: 400;
+   font-size: 1.5rem;
+   font-weight: 700;
    cursor: pointer;
    padding: 1rem 4rem;
    transition: all 0.3s ease-in-out;
@@ -47,6 +47,8 @@
    align-items: center;
 }
 .active {
-   border-bottom: 2px solid #6211fd;
    color: #6211fd;
+}
+.active-line {
+   border-bottom: 2px solid var(--brand-purple);
 }

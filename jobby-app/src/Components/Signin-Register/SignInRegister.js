@@ -29,18 +29,24 @@ function SignInRegister({ handleSignIn }) {
       >
          <div className="sir-inner-container">
             <div className="sir-sign-in-register">
-               <p
-                  onClick={() => handleClick("signin")}
-                  className={Option === "signin" && "active"}
-               >
-                  Sign In
-               </p>
-               <p
-                  onClick={() => handleClick("register")}
-                  className={Option === "register" && "active"}
-               >
-                  Register
-               </p>
+               <div className="signin-div">
+                  <p
+                     onClick={() => handleClick("signin")}
+                     className={Option === "signin" && "active"}
+                  >
+                     Sign In
+                  </p>
+                  {Option === "signin" && <div className="active-line"></div>}
+               </div>
+               <div className="register-div">
+                  <p
+                     onClick={() => handleClick("register")}
+                     className={Option === "register" && "active"}
+                  >
+                     Register
+                  </p>
+                  {Option === "register" && <div className="active-line"></div>}
+               </div>
             </div>
             <div className="sir-logo">
                <img src={Jobby} alt="logo" />
