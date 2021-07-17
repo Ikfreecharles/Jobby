@@ -1,7 +1,7 @@
 import "./register.css";
-import google from "../../../Images/google.png"
-import gmail from "../../../Images/gmail.png"
-import linkedin from "../../../Images/linkedin.png"
+import google from "../../../Images/google.png";
+import gmail from "../../../Images/gmail.png";
+import linkedin from "../../../Images/linkedin.png";
 
 
 

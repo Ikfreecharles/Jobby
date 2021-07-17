@@ -1,0 +1,55 @@
+form {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.si-email,
+.si-password {
+  border: 0.16rem solid white;
+  border-radius: 5px;
+  padding-right: 100px;
+  padding-left: 25px;
+  margin-top: 0.5rem;
+}
+
+form input {
+  width: 80%;
+  border: none;
+  background: transparent;
+  color: var(--brand-white);
+  outline: none;
+  padding-left: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+form input::placeholder {
+  color: var(--brand-white);
+  font-style: italic;
+  font-weight: 600;
+}
+
+label  {
+  color: var(--brand-white);
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+.si-email img,
+.si-password img {
+  width: 2rem;
+  padding-left: 0.5rem;
+}
+
+.si-outer-div button {
+  margin: 0 auto;
+  width: 11rem;
+  color: var(--brand-white);
+  background-color: var(--brand-purple);
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.9rem 3rem;
+  font-weight: 600;
+  border-radius: 5px;
+}

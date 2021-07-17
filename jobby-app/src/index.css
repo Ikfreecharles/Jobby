@@ -8,6 +8,7 @@
    --brand-white: #fff;
    --brand-lightgrey: #f4f2f2;
    --brand-text: #6b6b6b;
+   --brand-black: #000000;
 }
 
 * {
@@ -63,4 +64,11 @@ p,
 ul,
 li {
    color: var(--brand-text);
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+   -webkit-transition-delay: 9999s;
+   transition-delay: 9999s;
 }
