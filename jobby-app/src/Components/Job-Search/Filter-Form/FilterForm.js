@@ -1,14 +1,31 @@
-import React from "react";
+import "./filterForm.css";
 
 function FilterForm() {
    return (
-      <header>
-         <form>
-            <input type="text" placeholder="What" />
-            <input type="text" placeholder="Where" />
-            <button>Find Job</button>
+      <header className="ff-container">
+         <form className="ff-form">
+            <label htmlFor="title">
+               What:
+               <input
+                  type="text"
+                  name="title"
+                  id="title"
+                  placeholder="Job title"
+               />
+            </label>
+            <label htmlFor="location">
+               Where:
+               <input
+                  type="text"
+                  name="location"
+                  id="location"
+                  placeholder="Job location"
+               />
+            </label>
+
+            <button className="ff-btn">Find Job</button>
          </form>
-         <form>
+         <form className="ff-filter-form">
             <select id="" name="">
                <option value="HomeOffice">Home Office</option>
                <option value="Onsite">On Site</option>

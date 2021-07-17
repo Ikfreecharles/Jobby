@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 // import componenets
 import "./App.css";
 import Nav from "./Components/Nav/Nav";
+import LandingPage from "./Components/Landing-Page/LandingPage";
 import SignInRegister from "./Components/Signin-Register/SignInRegister";
 import JobSearch from "./Components/Job-Search/JobSearch";
 import Notification from "./Components/Notification/Notification";
@@ -22,6 +23,7 @@ function App() {
          <BrowserRouter>
             <Nav SignInIsTrue={SignInIsTrue} handleSignIn={handleSignIn} />
             <Switch>
+               <Route path="/" component={LandingPage} exact />
                <Route
                   path="/signin"
                   render={() => <SignInRegister handleSignIn={handleSignIn} />}

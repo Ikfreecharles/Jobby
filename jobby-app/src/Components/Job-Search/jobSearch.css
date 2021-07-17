@@ -1,0 +1,26 @@
+.js-container {
+   width: 70%;
+}
+.js-filterform-outer-container {
+   border-bottom: 1px solid var(--border-color);
+   padding: 2rem 0;
+   margin-bottom: 2rem;
+}
+.js-main-container-outer {
+   min-height: 100vh;
+}
+.js-main {
+   margin: 1rem 0;
+   position: relative;
+}
+.js-jobdetails-container {
+   position: sticky;
+   top: 0;
+   z-index: 10;
+}
+.js-jobalert-container {
+   position: absolute;
+   top: 0;
+   right: 0;
+   transform: translateX(50%);
+}

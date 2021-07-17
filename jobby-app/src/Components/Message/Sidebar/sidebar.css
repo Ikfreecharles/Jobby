@@ -1,0 +1,16 @@
+.sb-container {
+   border-radius: 4px;
+   border: 1px solid var(--border-color);
+   min-height: 90vh;
+   padding: 2rem;
+}
+.sb-form {
+   margin: 1rem 0;
+}
+.sb-form select {
+   width: 95%;
+   height: 3rem;
+   padding: 0 1rem;
+   background-color: var(--brand-lightgrey);
+   border: none;
+}

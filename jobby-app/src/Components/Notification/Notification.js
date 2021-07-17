@@ -9,17 +9,25 @@ function Notification() {
    const [Notification, setNotification] = useState(false);
 
    return (
-      <main className="n-container">
+      <main className="not-container">
          {Notification ? (
             <NotificationList />
          ) : (
-            <div className="n-no-notification">
+            <div className="not-no-notification">
                <img src="" alt="" />
-               <h3>You have no Notifications</h3>
-               <Link to="/jobsearch">
-                  <button>Find Job</button>
-               </Link>
-               <button>Post your Resume</button>
+               <h3>
+                  You currently have <br /> no Notifications
+               </h3>
+               <div className="not-btn-div">
+                  <Link to="/jobsearch">
+                     <button className="not-btn">Find Job</button>
+                  </Link>
+               </div>
+               <div className="not-btn-div">
+                  <button className="not-btn not-resume-btn">
+                     Post your Resume
+                  </button>
+               </div>
             </div>
          )}
       </main>

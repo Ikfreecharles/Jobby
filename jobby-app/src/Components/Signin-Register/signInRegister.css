@@ -1,35 +1,52 @@
-.sir-inner-container{
-    background-image: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0.23853291316526615) 26%,
-        rgba(0, 30, 88, 0.5970763305322129) 63%
+.sir-outer-container {
+   background-image: linear-gradient(
+         180deg,
+         rgba(255, 255, 255, 0.23853291316526615) 26%,
+         rgba(0, 30, 88, 0.5970763305322129) 63%
       ),
       url(../../Images/AdobeStock_229549310.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-  
-  }
-  
-.sir-logo img{
-    max-width: 200px;
-    margin-left: 45%;
-    margin-right: 40%;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   min-height: 100vh;
+   max-height: auto;
+   padding-top: 10vh;
+   transition: background-image 0.3s ease-in-out;
+}
+.sir-inner-container {
+   min-height: 100%;
+   max-height: 100%;
+   margin-left: auto;
+   margin-right: auto;
 }
 
-.sir-sign-in-register{
-    margin-left: 48%;
-    display: flex;
-    flex-direction: row;
-    width: 10rem;
-    justify-content: space-between;
+.sir-sign-in-register {
+   display: flex;
+   width: 25rem;
+   justify-content: space-between;
    padding-top: 1rem;
+   margin: 0 auto;
 }
-.sir-sign-in-register p{
-    font-size: 1.2rem;
-    font-weight: bold;
-
+.sir-sign-in-register p {
+   font-size: 1.2rem;
+   font-weight: 400;
+   cursor: pointer;
+   padding: 1rem 4rem;
+   transition: all 0.3s ease-in-out;
+}
+.sir-sign-in-register p:hover {
+   color: #777777;
+   background-color: rgba(0, 0, 0, 0.1);
+   border-radius: 4px;
+}
+.sir-logo {
+   margin: 3rem 0;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.active {
+   border-bottom: 2px solid #6211fd;
+   color: #6211fd;
 }

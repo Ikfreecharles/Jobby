@@ -2,36 +2,46 @@ import { Link } from "react-router-dom";
 
 //import components and css
 import "./jobDetails.css";
+import { IoIosClose } from "react-icons/io";
+import { MdFavorite } from "react-icons/md";
+import { FaFontAwesomeFlag } from "react-icons/fa";
+import { slideOut } from "../JobSearchAnimation";
 
 function JobDetails({ handleClick }) {
+   //function to handle hide job details
+   const handleClose = () => {
+      slideOut(handleClick, false);
+   };
+
    return (
       <article className="jd-card">
          <div className="jd-card-title">
             <h3>Frontend Developer Home Office (m/w/d)</h3>
-            <img
-               src=""
-               alt="close"
+            <IoIosClose
                onClick={() => {
-                  handleClick(false);
+                  handleClose();
                }}
+               className="jd-close"
             />
-         </div>
-         <div className="jc-apply-now">
-            <img src="" alt="" />
-            <p>Apply now directly</p>
-         </div>
-         <div className="jc-active-hire">
-            <img src="" alt="" />
-            <p>Actively hiring</p>
-         </div>
+         </div>{" "}
          <p>HSH Soft -and Harware Company Ltd</p>
-         <p>Berlin, Germany</p>
+         <div className="jc-apply-now-active-hire-div">
+            <div className="jc-apply-now">
+               <img src="" alt="" />
+               <p>Apply now directly</p>
+            </div>
+            <div className="jc-active-hire">
+               <img src="" alt="" />
+               <p>Actively hiring</p>
+            </div>
+         </div>
+         <p style={{ fontWeight: "700" }}>Berlin, Germany</p>
          <div className="jd-btn-div">
             <Link to="/application">
                <button className="jd-btn">Apply now</button>
             </Link>
             <button className="jd-fav-btn">
-               <img src="" alt="" />
+               <MdFavorite />
             </button>
          </div>
          <p>
@@ -73,17 +83,17 @@ function JobDetails({ handleClick }) {
          </p>
          <h4>Your Contact Person</h4>
          <p>
-            Meike Bodemann, HR Manager / Management Assistant European IT
-            Consultancy EITCO GmbH Fon +49 (228) 338 881 150
+            Meike Bodemann, HR Manager / Management Assistant <br /> European IT
+            Consultancy EITCO GmbH br Fon +49 (228) 338 881 150
          </p>
          <h4>Location</h4>
          <p>
-            Berlin , Potsdamer Platz 10, 10785 Berlin Bonn , Am Bonner Bogen 6,
-            53227 Bonn
+            Berlin , Potsdamer Platz 10, 10785 Berlin <br /> Bonn , Am Bonner
+            Bogen 6, 53227 Bonn
          </p>
-         <p>Posted: 4 days ago</p>
-         <button>
-            <img src="" alt="" />
+         <p style={{ margin: "1rem 0" }}>Posted: 4 days ago</p>
+         <button className="jd-btn jd-btn-report">
+            <FaFontAwesomeFlag style={{ marginRight: "1rem" }} />
             <p>Report Job</p>
          </button>
       </article>

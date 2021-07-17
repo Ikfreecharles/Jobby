@@ -1,11 +1,66 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    box-shadow: none;
-   
+:root {
+   --border-color: #a8a8a8;
+   --brand-blue: #0374f6;
+   --brand-purple: #6211fd;
+   --brand-cyan: #7de2e1;
+   --brand-skyblue: #5ed1fe;
+   --brand-grey: #343434;
+   --brand-white: #fff;
+   --brand-lightgrey: #f4f2f2;
+   --brand-text: #6b6b6b;
 }
-body{
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
+
+* {
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+   box-shadow: none;
+}
+*:focus {
+   outline: none;
+}
+html,
+body {
+   overflow-x: hidden !important;
+}
+html {
+   font-family: "Roboto", sans-serif;
+   font-size: 13px;
+}
+body {
+   overscroll-behavior: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+ol,
+a {
+   margin: 0;
+   padding: 0;
+}
+h3 {
+   font-size: 1.7rem;
+}
+h4 {
+   font-size: 1.4rem;
+   font-weight: 700;
+}
+h5 {
+   font-size: 1.3rem;
+   font-weight: 700;
+}
+h6 {
+   font-size: 1.3rem;
+   line-height: 1.8rem;
+}
+p,
+ul,
+li {
+   color: var(--brand-text);
 }

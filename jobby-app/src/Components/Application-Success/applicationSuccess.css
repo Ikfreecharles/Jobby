@@ -1,0 +1,11 @@
+.as-container {
+   width: 60%;
+   min-height: 50vh;
+   margin: 0 auto;
+   background-color: var(--brand-purple);
+   border-radius: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: var(--brand-white);
+}

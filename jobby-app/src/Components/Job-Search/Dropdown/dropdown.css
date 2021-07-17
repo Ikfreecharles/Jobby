@@ -1,0 +1,25 @@
+.d-container {
+   width: 12rem;
+   padding: 0 1.1rem;
+   box-shadow: -14px 10px 32px 0px rgba(0, 0, 0, 0.16);
+   -webkit-box-shadow: -14px 10px 32px 0px rgba(0, 0, 0, 0.16);
+   -moz-box-shadow: -14px 10px 32px 0px rgba(0, 0, 0, 0.16);
+   position: absolute;
+   top: 0;
+   left: 0;
+   transform: translate(250%, 30%);
+   border-radius: 15px;
+   background-color: var(--brand-white);
+   z-index: 20;
+}
+.d-save,
+.d-ignore,
+.d-report {
+   display: flex;
+   align-items: center;
+   margin: 2rem 0;
+}
+.d-icon {
+   margin-right: 2rem;
+   font-size: 2rem;
+}

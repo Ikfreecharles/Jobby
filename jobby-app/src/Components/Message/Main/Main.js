@@ -7,17 +7,25 @@ import "./main.css";
 function Main() {
    const [MessagesIsTrue, setMessagesIsTrue] = useState(false);
    return (
-      <section>
+      <section className="not-container main-container">
          {MessagesIsTrue ? (
             <div></div>
          ) : (
-            <div>
+            <div className="not-no-notification">
                <img src="" alt="" />
-               <h3>You currently have no messages</h3>
-               <Link to="/jobsearch">
-                  <button>Find Job</button>
-               </Link>
-               <button>Post your resume</button>
+               <h3>
+                  You currently have <br /> no messages
+               </h3>
+               <div className="not-btn-div">
+                  <Link to="/jobsearch">
+                     <button className="not-btn">Find Job</button>
+                  </Link>
+               </div>
+               <div className="not-btn-div">
+                  <button className="not-btn not-resume-btn">
+                     Post your Resume
+                  </button>
+               </div>
             </div>
          )}
       </section>

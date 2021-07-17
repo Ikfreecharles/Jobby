@@ -1,0 +1,42 @@
+.jc-card {
+   border: 1px solid var(--border-color);
+   border-radius: 10px;
+   padding: 1.5rem;
+   margin-bottom: 0.4rem;
+   cursor: pointer;
+   position: relative;
+}
+.jc-card-title {
+   display: flex;
+   flex-wrap: nowrap;
+   align-items: flex-start;
+   justify-content: space-between;
+}
+.jc-card-title h3 {
+   flex-basis: 90%;
+}
+.jc-menu {
+   font-size: 2.4rem;
+}
+.jc-apply-now-active-hire-div {
+   display: flex;
+   margin: 0.5rem 0;
+}
+.jc-apply-now,
+.jc-active-hire {
+   border: 1px solid var(--border-color);
+   display: flex;
+   align-items: center;
+   padding: 0.3rem 1rem;
+   border-radius: 10rem;
+   font-size: 0.7rem;
+   margin-right: 0.7rem;
+}
+.jc-apply-now img,
+.jc-active-hire img {
+   width: 0.7rem;
+}
+.jc-date-posted {
+   display: flex;
+   margin-top: 1rem;
+}
