@@ -1,5 +1,9 @@
+.si-outer-div {
+  display: flex;
+  flex-direction: column;
+}
 form {
-  width: 30%;
+  width: auto;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -8,13 +12,13 @@ form {
 .si-password {
   border: 0.16rem solid white;
   border-radius: 5px;
-  padding-right: 100px;
-  padding-left: 25px;
+  display: flex;
+  align-items: center;
   margin-top: 0.5rem;
 }
 
 form input {
-  width: 80%;
+  width: 90%;
   border: none;
   background: transparent;
   color: var(--brand-white);
@@ -30,7 +34,7 @@ form input::placeholder {
   font-weight: 600;
 }
 
-label  {
+label {
   color: var(--brand-white);
   margin-bottom: 1.5rem;
   font-size: 1.4rem;
