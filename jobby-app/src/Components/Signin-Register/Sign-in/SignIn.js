@@ -38,17 +38,6 @@ function SignIn({ handleSignIn }) {
                   />
                </div>
             </label>
-<<<<<<< Updated upstream
-            <Link to="/" className="si-link">
-               <button
-                  onClick={(e) => {
-                     handleFormSubmit(e);
-                  }}
-               >
-                  Log In
-               </button>
-            </Link>
-=======
             <button
                onClick={(e) => {
                   handleFormSubmit(e);
@@ -56,7 +45,6 @@ function SignIn({ handleSignIn }) {
             >
              Sign In
             </button>
->>>>>>> Stashed changes
          </form>
       </article>
    );

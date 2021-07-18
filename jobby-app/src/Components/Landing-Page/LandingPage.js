@@ -30,11 +30,11 @@ import careersupport from "../../Images/Section Images/careersupport.jpg";
 
 function LandingPage() {
   return (
-    <main>
+    <main className="lp-outer-Div">
       <section className="bg-image-container">
-        <div className="items-container">
+        <div className="lp-items-container">
           <h1>Jobby is Europe's Job search platform for student</h1>
-          <div className="input-container">
+          <div className="lp-input-container">
             <input
               type="text"
               name="job-search"
@@ -52,7 +52,7 @@ function LandingPage() {
           </div>
         </div>
       </section>
-      <h2 className="heading"> Companies that hires through us</h2>
+      <h2 className="lp-heading"> Companies that hires through us</h2>
       <section className="companies-logos">
         <div className="C-I">
           <img src={Companyone} alt="C-icon" />
@@ -83,7 +83,8 @@ function LandingPage() {
         </div>
       </section>
 
-      <h3 className="steps-heading">Get a job in easy Steps</h3>
+      <h3 className="lp-steps-heading">Get a job in easy Steps</h3>
+
       <section className="icon-image-container">
         <div class="Profile-icons">
           <div className="container-one">
@@ -103,7 +104,7 @@ function LandingPage() {
             </div>
           </div>
           <div className="container-two">
-            <div className="bg-profile-two">
+            <div className="bg-profile-one">
               <img src={jobinterview} alt="Interview" className="icon-two" />
             </div>
             <div>
@@ -116,7 +117,7 @@ function LandingPage() {
           </div>
 
           <div className="container-three">
-            <div className="bg-profile-three">
+            <div className="bg-profile-one">
               <img src={getOffer} alt="Get profile" className="icon-three" />
             </div>
             <div>
@@ -129,7 +130,7 @@ function LandingPage() {
           </div>
 
           <div className="container-four">
-            <div className="bg-profile-four">
+            <div className="bg-profile-one">
               <img src={Hired} alt="Get profile" className="icon-four" />
             </div>
             <div>
@@ -169,7 +170,7 @@ function LandingPage() {
             </div>
 
             <div className="container-two-B">
-              <div className="bg-profile-two">
+              <div className="bg-profile-one">
                 <img
                   src={Engineering}
                   alt="Choose Location"
@@ -186,7 +187,7 @@ function LandingPage() {
             </div>
 
             <div className="container-three-B">
-              <div className="bg-profile-three">
+              <div className="bg-profile-one">
                 <img
                   src={ChooseJob}
                   alt="Choose Location"
@@ -203,7 +204,7 @@ function LandingPage() {
             </div>
 
             <div className="container-four-B">
-              <div className="bg-profile-four">
+              <div className="bg-profile-one">
                 <img
                   src={TechStack}
                   alt="Choose Location"

@@ -11,23 +11,20 @@
   min-height: 100vh;
 }
 
-.items-container {
+.lp-items-container {
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
 }
 
-.input-container {
-  width: 60rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.lp-input-container {
+  width: 100%;
   margin: 0 auto;
 }
 
-.items-container h1 {
-  width: 55rem;
+.lp-items-container h1 {
   text-align: center;
   font-size: 4rem;
   font-weight: 700;
@@ -36,7 +33,7 @@
   margin-top: 20rem;
 }
 
-.input-container input {
+.lp-input-container input {
   align-items: center;
   background: transparent;
   background: rgba(255, 255, 255, 0.3);
@@ -50,7 +47,7 @@
   outline: none;
 }
 
-.input-container button {
+.lp-input-container button {
   color: var(--brand-white);
   background-color: var(--brand-skyblue);
   font-size: 1.2rem;
@@ -60,16 +57,16 @@
   white-space: nowrap;
   padding: 0.7rem 2rem;
 }
-.input-container button:hover {
+.lp-input-container button:hover {
   background-color: var(--brand-purple);
   transition: all 2s ease-in-out;
 }
-.input-container input::placeholder {
+.lp-input-container input::placeholder {
   color: var(--brand-black);
   font-weight: 700;
   letter-spacing: 0.5px;
 }
-.input-container input[type="text"] {
+.lp-input-container input[type="text"] {
   font-size: 1.2em;
 }
 
@@ -94,127 +91,89 @@
   height: 100%;
 }
 
-.heading {
+.lp-heading {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  text-align: center;
   font-size: 2rem;
   font-weight: 600;
   margin-top: 5rem;
   margin-bottom: 5rem;
+  padding-bottom: 1rem;
   position: relative;
 }
 
-.heading::after {
+.lp-heading::after {
   position: absolute;
   content: " ";
   width: 35rem;
   height: 0.1rem;
   background-color: var(--border-color);
-  top: 3rem;
+  bottom: 0;
 }
 
-.steps-heading {
+.lp-steps-heading {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  text-align: center;
   font-size: 2rem;
   font-weight: 600;
   margin-top: 5rem;
   margin-bottom: 3.5rem;
+  padding-bottom: 1rem;
   position: relative;
 }
-.steps-heading::after {
+.lp-steps-heading::after {
   position: absolute;
   content: " ";
-  width: 35rem;
+  width: 25vw;
   height: 0.1rem;
   background-color: var(--border-color);
-  top: 3rem;
-}
-.Profile-icons {
-  min-height: 45rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-right: 6rem;
-}
-
-.Profile-icons::after {
-  position: absolute;
-  content: " ";
-  width: 29.6rem;
-  height: 0.1rem;
-  background-color: var(--border-color);
-  top: 3rem;
-  transform: rotate(90deg);
-  left: -11rem;
-  top: 22.3rem;
+  bottom: 0rem;
 }
 
 /* The icon widths settings for the first section and the second section*/
 
 .Profile-icons img,
 .Profile-icons-B img {
-  width: 100px;
-  padding: 2rem;
+  width: 50%;
 }
 
 /* Profile icons background for the first section and the section section, same classes css but different classes on each section*/
 
 .Profile-icons .bg-profile-one,
 .Profile-icons-B .bg-profile-one {
-  width: 100px;
+  width: 7rem;
+  height: 7rem;
   background-color: rgba(125, 226, 225, 0.3);
   margin-right: 2rem;
-  border-radius: 30rem;
-}
-
-.Profile-icons .bg-profile-two,
-.Profile-icons-B .bg-profile-two {
-  width: 100px;
-  border-radius: 30rem;
-  background-color: rgba(3, 116, 246, 0.3);
-  margin-right: 2rem;
-}
-
-.Profile-icons .bg-profile-three,
-.Profile-icons-B .bg-profile-three {
-  width: 100px;
-  border-radius: 45px;
-  background-color: rgba(153, 153, 153, 0.2);
-  margin-right: 2rem;
-}
-
-.Profile-icons .bg-profile-four,
-.Profile-icons-B .bg-profile-four {
-  background-color: rgba(125, 226, 225, 0.4);
-  width: 100px;
-  border-radius: 45px;
-  margin-right: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container-one,
 .container-one-B {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 .container-two,
 .container-two-B {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .container-three,
 .container-three-B {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .container-four,
 .container-four-B {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 .Profile-icons p,
 .Profile-icons-B p {
@@ -223,11 +182,10 @@
 }
 
 .icon-image-container {
-  width: 90rem;
-  display: flex;
-  flex-direction: row;
+  width: 90%;
+  /*display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
   margin: 0 auto;
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -241,7 +199,6 @@
   align-items: center;
   flex-wrap: wrap;
   margin: 0 auto;
-
   padding-top: 5rem;
 }
 .Profile-icons-B .container-one-B,
@@ -384,4 +341,7 @@
 .lp-S-container span:hover {
   color: var(--brand-purple);
   cursor: pointer;
+}
+.lp-outer-Div {
+  width: 100vw;
 }
