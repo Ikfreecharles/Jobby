@@ -144,6 +144,7 @@
 .Profile-icons .bg-profile-one,
 .Profile-icons-B .bg-profile-one {
   width: 7rem;
+  min-width: 7rem;
   height: 7rem;
   background-color: rgba(125, 226, 225, 0.3);
   margin-right: 2rem;
@@ -175,17 +176,17 @@
   display: flex;
   align-items: flex-start;
 }
-.Profile-icons p,
+.lp-Main-Container p,
 .Profile-icons-B p {
   font-size: 1.3rem;
-  width: 28rem;
+ 
 }
 
 .icon-image-container {
-  width: 90%;
-  /*display: flex;
+  max-width: 90%;
+  display: flex;
   justify-content: center;
-  align-items: center;*/
+  align-items: center;
   margin: 0 auto;
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -217,7 +218,7 @@
 
 .getjob-img img {
   width: 400px;
-  margin-left: 9rem;
+
 }
 
 .container-one h6,
@@ -241,37 +242,31 @@
 .container-four-B h6 {
   width: 30rem;
 }
-
-.container-one h6 {
+.lp-Main-Container{
+  margin-bottom: 3rem;
+}
+.lp-Main-Container h6 {
   background-color: rgba(125, 226, 225, 0.3);
-  width: 18rem;
   padding: 0.7rem 1.5rem;
   border-radius: 1.3rem;
   white-space: nowrap;
+  display: inline-block;
 }
 
 .container-two h6 {
   background-color: rgba(3, 116, 246, 0.3);
-  width: 25rem;
-  padding: 0.7rem 1.5rem;
-  border-radius: 1.3rem;
-  white-space: nowrap;
+
 }
 
 .container-three h6 {
   background-color: rgba(153, 153, 153, 0.2);
-  width: 30rem;
-  padding: 0.7rem 1.5rem;
-  border-radius: 1.3rem;
-  white-space: nowrap;
+
 }
 
 .container-four h6 {
   background-color: rgba(125, 226, 225, 0.4);
-  width: 12rem;
-  padding: 0.7rem 1.5rem;
-  border-radius: 1.3rem;
-  white-space: nowrap;
+ 
+
 }
 
 .why-Use h5 {

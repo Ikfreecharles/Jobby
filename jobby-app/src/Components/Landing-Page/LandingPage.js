@@ -85,9 +85,12 @@ function LandingPage() {
 
       <h3 className="lp-steps-heading">Get a job in easy Steps</h3>
 
-      <section className="icon-image-container">
-        <div class="Profile-icons">
-          <div className="container-one">
+      <section className="icon-image-container row">
+        <div class="Profile-icons  col-md-6">
+        
+
+         
+          <div className="container-one lp-Main-Container">
             <div className="bg-profile-one">
               <img
                 src={createprofile}
@@ -103,7 +106,7 @@ function LandingPage() {
               </p>
             </div>
           </div>
-          <div className="container-two">
+          <div className="container-two lp-Main-Container">
             <div className="bg-profile-one">
               <img src={jobinterview} alt="Interview" className="icon-two" />
             </div>
@@ -116,7 +119,7 @@ function LandingPage() {
             </div>
           </div>
 
-          <div className="container-three">
+          <div className="container-three lp-Main-Container">
             <div className="bg-profile-one">
               <img src={getOffer} alt="Get profile" className="icon-three" />
             </div>
@@ -129,7 +132,7 @@ function LandingPage() {
             </div>
           </div>
 
-          <div className="container-four">
+          <div className="container-four lp-Main-Container">
             <div className="bg-profile-one">
               <img src={Hired} alt="Get profile" className="icon-four" />
             </div>
@@ -139,7 +142,7 @@ function LandingPage() {
             </div>
           </div>
         </div>
-        <div className="getjob-img">
+        <div className="getjob-img col-md-6">
           <img src={getjob} alt="get job" />
         </div>
       </section>
