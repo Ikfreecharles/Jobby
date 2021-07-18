@@ -1,0 +1,56 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 200px) {
+  /* Styles */
+  html {
+    font-size: 12px;
+  }
+  .lp-items-container,
+  .icon-image-container,
+  .icon-image-container-two,
+  .lp-S-container {
+    width: 94%;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width: 760px) {
+  /* Styles */
+  html {
+    font-size: 14px;
+  }
+  .lp-items-container,
+  .icon-image-container,
+  .icon-image-container-two,
+  .lp-S-container {
+    width: 85%;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1200px) {
+  /* Styles */
+  html {
+    font-size: 14px;
+  }
+  .lp-items-container,
+  .icon-image-container,
+  .icon-image-container-two,
+  .lp-S-container {
+    width: 60%;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+  html {
+    font-size: 18px;
+  }
+
+  .lp-items-container,
+  .icon-image-container,
+  .icon-image-container-two,
+  .lp-S-container {
+    width: 70%;
+  }
+}

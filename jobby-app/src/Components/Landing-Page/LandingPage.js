@@ -1,5 +1,6 @@
 import React from "react";
 import "./landingPage.css";
+import "./landingPageMediaquery.css";
 
 //images for listed company's logos
 import Companyone from "../../Images/companies logo/Companyone.png";
