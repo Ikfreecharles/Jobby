@@ -87,9 +87,6 @@ function LandingPage() {
 
       <section className="icon-image-container row">
         <div class="Profile-icons  col-md-6">
-        
-
-         
           <div className="container-one lp-Main-Container">
             <div className="bg-profile-one">
               <img
@@ -126,8 +123,8 @@ function LandingPage() {
             <div>
               <h6>Become Visible and get Offer</h6>
               <p>
-                Become visible on Honeypot so that companies can find your
-                profile and make you offers and tech startup front
+                Become visible on Jobby so that companies can find your profile
+                and make you offers and tech startup front
               </p>
             </div>
           </div>
@@ -142,7 +139,8 @@ function LandingPage() {
             </div>
           </div>
         </div>
-        <div className="getjob-img col-md-6">
+        <div class="col-md-2"> </div>
+        <div className="getjob-img col-md-4">
           <img src={getjob} alt="get job" />
         </div>
       </section>
@@ -154,7 +152,7 @@ function LandingPage() {
 
         <section className="icon-image-container-two">
           <div class="Profile-icons-B">
-            <div className="container-one-B">
+            <div className="container-one-B lp-container-two">
               <div className="bg-profile-one">
                 <img
                   src={location}
@@ -167,12 +165,12 @@ function LandingPage() {
                 <p>
                   Jobby operates in Europe most exciting tech cities. Set your
                   location preferences and company apply to you
-                  <span className="lp-C-one"> Sign up now &#8594;</span>
                 </p>
+                <span className="lp-C-one"> Sign up now &#8594;</span>
               </div>
             </div>
 
-            <div className="container-two-B">
+            <div className="container-two-B lp-container-two">
               <div className="bg-profile-one">
                 <img
                   src={Engineering}
@@ -189,7 +187,7 @@ function LandingPage() {
               </div>
             </div>
 
-            <div className="container-three-B">
+            <div className="container-three-B lp-container-two">
               <div className="bg-profile-one">
                 <img
                   src={ChooseJob}
@@ -206,7 +204,7 @@ function LandingPage() {
               </div>
             </div>
 
-            <div className="container-four-B">
+            <div className="container-four-B lp-container-two">
               <div className="bg-profile-one">
                 <img
                   src={TechStack}
@@ -227,11 +225,12 @@ function LandingPage() {
         </section>
       </div>
 
-      <section className="lp-S-container">
-        <div className="lp-S-img">
+      <section className="lp-S-container row">
+        <div className="lp-S-img col-md-4">
           <img src={careersupport} alt="support image" />
         </div>
-        <div>
+        <div className="col-md-1"></div>
+        <div className="col-md-6">
           <h2>Free Career and Dev Support</h2>
           <p>
             Your dedicated Talent Success Advisor doubles as your personal
@@ -240,8 +239,9 @@ function LandingPage() {
             benchmark your salary and optimise your profile to stand out. They
             offer mock interviews to hone your communication and presentation.
             Plus, you can also receive guidance from our visa support
-            specialists.<span className="lp-S-span"> Learn More &#8594;</span>
+            specialists.
           </p>
+          <span className="lp-S-span"> Learn More &#8594;</span>
         </div>
       </section>
     </main>
