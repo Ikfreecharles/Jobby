@@ -1,64 +1,64 @@
 .si-outer-div {
-  display: flex;
-  padding: 0rem 2rem;
+   display: flex;
+   padding: 0rem 2rem;
 }
-form {
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  flex-basis: 40rem;
+.si-form {
+   width: auto;
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+   flex-basis: 40rem;
 }
 .si-email,
 .si-password {
-  border: 0.16rem solid white;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  margin-top: 0.5rem;
+   border: 0.16rem solid white;
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   margin-top: 0.5rem;
 }
 
-form input {
-  width: 90%;
-  border: none;
-  background: transparent;
-  color: var(--brand-white);
-  outline: none;
-  padding-left: 15px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+.si-form input {
+   width: 100%;
+   border: none;
+   background: transparent;
+   color: var(--brand-white);
+   outline: none;
+   padding: 12px 10px;
 }
 
-form input::placeholder {
-  color: var(--brand-lightgrey);
-  font-style: italic;
-  font-weight: 200;
+.si-form input::placeholder {
+   color: var(--brand-lightgrey);
+   font-style: italic;
+   font-weight: 200;
+   font-size: 1.1rem;
 }
 
-label {
-  color: var(--brand-white);
-  margin-bottom: 1.5rem;
-  font-size: 1.4rem;
+.si-form label {
+   color: var(--brand-white);
+   margin-bottom: 1.5rem;
+   font-size: 1.4rem;
 }
 .si-email img,
 .si-password img {
-  width: 2rem;
-  padding-left: 0.5rem;
+   width: 2rem;
+   margin-left: 1.5rem;
 }
-
+.si-link {
+   margin: 0 auto;
+}
 .si-outer-div button {
-  margin: 0 auto;
-  width: 11rem;
-  color: var(--brand-white);
-  background-color: var(--brand-purple);
-  outline: none;
-  border: none;
-  font-size: 1.5rem;
-  padding: 0.9rem 3rem;
-  font-weight: 600;
-  border-radius: 5px;
+   width: 15rem;
+   color: var(--brand-white);
+   background-color: var(--brand-purple);
+   outline: none;
+   border: none;
+   font-size: 1.5rem;
+   padding: 1.3rem 3rem;
+   font-weight: 600;
+   border-radius: 5px;
 }
-.si-outer-div button:hover{
-    background-color: var(--brand-blue);
-    transition: all 2s ease-in-out;
+.si-outer-div button:hover {
+   background-color: var(--brand-blue);
+   transition: all 2s ease-in-out;
 }

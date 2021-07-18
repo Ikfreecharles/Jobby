@@ -1,0 +1,106 @@
+.f-footer-container {
+   background-color: var(--brand-purple);
+   color: var(--brand-white);
+   padding: 7rem 3rem;
+   margin-top: 6rem;
+}
+.f-container-fluid {
+   display: flex;
+   justify-content: flex-end;
+}
+.f-row {
+   width: 90%;
+}
+.f-rightside {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+.f-footer-container h3 {
+   font-size: 3rem;
+   font-weight: 700;
+   margin-bottom: 2rem;
+}
+.f-form {
+   display: flex;
+   align-items: center;
+   height: 3.5rem;
+   width: 100%;
+   border: 1px solid var(--brand-white);
+   border-radius: 40px;
+   background-color: var(--brand-white);
+   position: relative;
+   transition: all 0.3s ease-in-out;
+}
+
+.f-form:hover,
+.f-form:focus-within {
+   box-shadow: -51px 40px 71px 0px rgba(44, 0, 129, 0.46);
+   -webkit-box-shadow: -51px 40px 71px 0px rgba(44, 0, 129, 0.46);
+   -moz-box-shadow: -51px 40px 71px 0px rgba(44, 0, 129, 0.46);
+}
+.f-form input {
+   height: 95%;
+   padding: 0 1rem;
+   width: 30rem;
+   font-size: 1.3rem;
+   background: none;
+   border: none;
+}
+.f-form input::placeholder {
+   color: var(--brand-grey);
+   opacity: 0.5;
+   font-size: 1rem;
+   font-style: italic;
+}
+.f-btn {
+   background-color: var(--brand-purple);
+   border: none;
+   border-radius: 40px;
+   width: 5rem;
+   height: 96%;
+   position: absolute;
+   right: 0;
+   transform: translateX(-2%);
+}
+.f-btn-icon {
+   color: var(--brand-white);
+   font-size: 3rem;
+}
+.f-line {
+   width: 20%;
+   border-bottom: 1px solid var(--brand-white);
+   margin: 0.5rem 0 1.5rem;
+}
+.f-rightside h6 {
+   font-size: 1.4rem;
+   font-weight: 700;
+}
+.f-rightside li {
+   list-style-type: none;
+   color: var(--brand-white);
+   margin-bottom: 0.6rem;
+   cursor: pointer;
+   transition: all 0.3s ease-in;
+   display: flex;
+   align-items: center;
+}
+.f-rightside li:hover {
+   text-decoration: underline;
+   color: var(--brand-lightgrey);
+   font-weight: 600;
+}
+.f-icon {
+   width: 2rem;
+   height: 2rem;
+   border-radius: 50%;
+   background-color: var(--brand-white);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-right: 1rem;
+}
+.f-sm-icon {
+   color: var(--brand-purple);
+   font-size: 1.1rem;
+}

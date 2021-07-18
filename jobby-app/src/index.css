@@ -23,14 +23,13 @@
 html,
 body {
    overflow-x: hidden !important;
+   overscroll-behavior: none;
 }
 html {
    font-family: "Roboto", sans-serif;
    font-size: 13px;
 }
-body {
-   overscroll-behavior: none;
-}
+
 h1,
 h2,
 h3,
