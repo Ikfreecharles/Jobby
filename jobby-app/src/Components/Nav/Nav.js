@@ -6,6 +6,7 @@ import "./nav.css";
 import { IoNotifications, IoPerson } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import ProfileDropdown from "./Profile-Dropdown/ProfileDropdown";
+import Jobby from "../../Images/Jobby.png"
 
 function Nav({ SignInIsTrue, handleSignIn }) {
    const [ShowProfile, setShowProfile] = useState(false);
@@ -19,7 +20,7 @@ function Nav({ SignInIsTrue, handleSignIn }) {
    return (
       <section className="container n-container">
          <div className="n-logo">
-            <img src="" alt="" />
+            <img src={Jobby} alt="Logo" />
          </div>
          <div className="n-menu">
             <ul>
@@ -51,7 +52,7 @@ function Nav({ SignInIsTrue, handleSignIn }) {
             </div>
          ) : (
             <Link to="/signin">
-               <div>
+               <div className="n-si-re">
                   <span>SignIn</span>
                   <span>/</span>
                   <span>Register</span>

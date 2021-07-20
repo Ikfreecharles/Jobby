@@ -1,0 +1,53 @@
+.n-container .n-logo {
+  width: 5rem;
+  height: 12%;
+  position: absolute;
+}
+
+.n-container .n-logo img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.n-container {
+  width: 100%;
+  height: 0rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.n-menu {
+  width: 65%;
+  padding-top: 2rem;
+}
+
+.n-menu ul {
+  display: flex;
+  flex-direction: row;
+  margin-left: 12rem;
+}
+
+.n-menu li {
+  color: var( --brand-blue);
+  list-style: none;
+  margin-right: 5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.n-menu ul .n-jobsearch {
+  text-decoration: none;
+}
+
+.n-menu li:hover {
+  cursor: pointer;
+  color: var(--brand-skyblue);
+  border-bottom: 1px solid black;
+}
+
+.n-si-re{
+    padding-top: 2rem;
+}
