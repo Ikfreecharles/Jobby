@@ -1,56 +1,78 @@
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-width: 200px) {
-  /* Styles */
-  html {
-    font-size: 12px;
-  }
-  .lp-items-container,
-  .icon-image-container,
-  .icon-image-container-two,
-  .lp-S-container {
-    width: 94%;
-  }
+   /* Styles */
+   html {
+      font-size: 12px;
+   }
+   .lp-items-container,
+   .icon-image-container,
+   .icon-image-container-two,
+   .lp-S-container {
+      width: 94%;
+   }
+   .lp-container-two {
+      margin-bottom: 5rem;
+      flex: 100%;
+      padding-right: 0;
+   }
+   .lp-input-container {
+      flex-direction: column;
+   }
+   .bg-image-container {
+      min-height: 60vh;
+   }
 }
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width: 760px) {
-  /* Styles */
-  html {
-    font-size: 14px;
-  }
-  .lp-items-container,
-  .icon-image-container,
-  .icon-image-container-two,
-  .lp-S-container {
-    width: 85%;
-  }
+   /* Styles */
+   html {
+      font-size: 14px;
+   }
+   .lp-items-container,
+   .icon-image-container,
+   .icon-image-container-two,
+   .lp-S-container {
+      width: 85%;
+   }
+   .lp-container-two {
+      margin-bottom: 5rem;
+      flex: 50%;
+      padding-right: 3rem;
+   }
+   .lp-input-container {
+      flex-direction: row;
+   }
+   .bg-image-container {
+      min-height: 30rem;
+   }
 }
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1200px) {
-  /* Styles */
-  html {
-    font-size: 14px;
-  }
-  .lp-items-container,
-  .icon-image-container,
-  .icon-image-container-two,
-  .lp-S-container {
-    width: 60%;
-  }
+   /* Styles */
+   html {
+      font-size: 14px;
+   }
+   .lp-items-container,
+   .icon-image-container,
+   .icon-image-container-two,
+   .lp-S-container {
+      width: 80%;
+   }
 }
 
 /* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
-  /* Styles */
-  html {
-    font-size: 18px;
-  }
+   /* Styles */
+   html {
+      font-size: 18px;
+   }
 
-  .lp-items-container,
-  .icon-image-container,
-  .icon-image-container-two,
-  .lp-S-container {
-    width: 70%;
-  }
+   .lp-items-container,
+   .icon-image-container,
+   .icon-image-container-two,
+   .lp-S-container {
+      width: 70%;
+   }
 }

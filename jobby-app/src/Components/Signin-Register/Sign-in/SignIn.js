@@ -38,13 +38,15 @@ function SignIn({ handleSignIn }) {
                   />
                </div>
             </label>
-            <button
-               onClick={(e) => {
-                  handleFormSubmit(e);
-               }}
-            >
-             Sign In
-            </button>
+            <Link to="/" className="si-link">
+               <button
+                  onClick={(e) => {
+                     handleFormSubmit(e);
+                  }}
+               >
+                  Sign In
+               </button>
+            </Link>
          </form>
       </article>
    );
