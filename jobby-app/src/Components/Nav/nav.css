@@ -1,13 +1,23 @@
 .n-container .n-logo {
+<<<<<<< Updated upstream
   width: 5rem;
   height: 12%;
   position: absolute;
+=======
+  min-width: 20rem;
+  height: 12%;
+  position: fixed;
+>>>>>>> Stashed changes
 }
 
 .n-container .n-logo img {
   object-fit: contain;
   width: 100%;
   height: 100%;
+<<<<<<< Updated upstream
+=======
+  padding-top: 3rem;
+>>>>>>> Stashed changes
 }
 
 .n-container {
@@ -16,16 +26,27 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+<<<<<<< Updated upstream
 }
 
 .n-menu {
   width: 65%;
   padding-top: 2rem;
+=======
+
+  
+}
+
+.n-menu {
+  width: 60%;
+  padding-top: 4rem;
+>>>>>>> Stashed changes
 }
 
 .n-menu ul {
   display: flex;
   flex-direction: row;
+<<<<<<< Updated upstream
   margin-left: 12rem;
 }
 
@@ -37,10 +58,24 @@
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1.5px;
+=======
+
+  margin-left: 20rem;
+}
+
+.n-menu li {
+  list-style: none;
+  margin-right: 5rem;
+  font-size:1rem;
+  font-weight: bold;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+>>>>>>> Stashed changes
 }
 .n-menu ul .n-jobsearch {
   text-decoration: none;
 }
+<<<<<<< Updated upstream
 
 .n-menu li:hover {
   cursor: pointer;
@@ -51,3 +86,9 @@
 .n-si-re{
     padding-top: 2rem;
 }
+=======
+.n-menu li:hover{
+    cursor: pointer;
+    color: var(--brand-skyblue);
+}
+>>>>>>> Stashed changes

@@ -16,9 +16,15 @@
 }
 
 .lp-input-container {
+<<<<<<< Updated upstream
    margin: 0 auto;
    display: flex;
    width: 100%;
+=======
+  width: 100%;
+  margin: 0 auto;
+ 
+>>>>>>> Stashed changes
 }
 
 .lp-items-container h1 {
@@ -49,6 +55,7 @@
 }
 
 .lp-input-container button {
+<<<<<<< Updated upstream
    color: var(--brand-white);
    background-color: var(--brand-blue);
    font-size: 1.2rem;
@@ -58,6 +65,17 @@
    white-space: nowrap;
    padding: 0.7rem 2rem;
    transition: all 0.3s ease-in-out;
+=======
+  color: var(--brand-white);
+  background-color: var(--brand-skyblue);
+  font-size: 1.2rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  white-space: nowrap;
+  padding: 0.7rem 2rem;
+  
+>>>>>>> Stashed changes
 }
 .lp-input-container button:hover {
    background-color: var(--brand-purple);
