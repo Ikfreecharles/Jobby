@@ -6,20 +6,13 @@ import "./nav.css";
 import { IoNotifications, IoPerson } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import ProfileDropdown from "./Profile-Dropdown/ProfileDropdown";
-<<<<<<< Updated upstream
-import Jobby from "../../Images/Jobby.png"
-=======
 import Jobby from "../../Images/Jobby.png";
->>>>>>> Stashed changes
 
 function Nav({ SignInIsTrue, handleSignIn }) {
-  const [ShowProfile, setShowProfile] = useState(false);
+   const [ShowProfile, setShowProfile] = useState(false);
 
-  useEffect(() => {
-    setShowProfile(false);
-    return () => {
+   useEffect(() => {
       setShowProfile(false);
-<<<<<<< Updated upstream
       return () => {
          setShowProfile(false);
       };
@@ -27,16 +20,18 @@ function Nav({ SignInIsTrue, handleSignIn }) {
    return (
       <section className="container n-container">
          <div className="n-logo">
-            <img src={Jobby} alt="Logo" />
+            <img src={Jobby} alt="logo" />
          </div>
          <div className="n-menu">
             <ul>
                <Link to="/" className="n-jobsearch">
                   <li>Home</li>
                </Link>
+
                <Link to="/jobsearch" className="n-jobsearch">
                   <li>Job Search</li>
                </Link>
+
                <li>For Companies</li>
             </ul>
          </div>
@@ -59,7 +54,7 @@ function Nav({ SignInIsTrue, handleSignIn }) {
             </div>
          ) : (
             <Link to="/signin">
-               <div className="n-si-re">
+               <div>
                   <span>SignIn</span>
                   <span>/</span>
                   <span>Register</span>
@@ -68,56 +63,6 @@ function Nav({ SignInIsTrue, handleSignIn }) {
          )}
       </section>
    );
-=======
-    };
-  }, []);
-  return (
-    <section className="container n-container">
-      <div className="n-logo">
-        <img src={Jobby} alt="logo" />
-      </div>
-      <div className="n-menu">
-        <ul>
-          <Link to="/" className="n-jobsearch">
-            <li>Home</li>
-          </Link>
-
-          <Link to="/jobsearch" className="n-jobsearch">
-            <li>Job Search</li>
-          </Link>
-
-          <li>For Companies</li>
-        </ul>
-      </div>
-      {SignInIsTrue ? (
-        <div className="n-icons">
-          <Link to="/notification" className="n-links">
-            {" "}
-            <IoNotifications />
-          </Link>
-          <Link to="/message" className="n-links">
-            <MdEmail />
-          </Link>
-          <IoPerson
-            onClick={() => {
-              setShowProfile((ShowProfile) => !ShowProfile);
-            }}
-            className="n-links"
-          />
-          {ShowProfile && <ProfileDropdown handleSignIn={handleSignIn} />}
-        </div>
-      ) : (
-        <Link to="/signin">
-          <div>
-            <span>SignIn</span>
-            <span>/</span>
-            <span>Register</span>
-          </div>
-        </Link>
-      )}
-    </section>
-  );
->>>>>>> Stashed changes
 }
 
 export default Nav;

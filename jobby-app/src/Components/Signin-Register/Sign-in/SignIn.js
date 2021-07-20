@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+
+//import component and css
 import "./signIn.css";
 import email from "../../../Images/Icons folders/email.png";
 import lock from "../../../Images/Icons folders/lock.png";
@@ -13,29 +16,27 @@ function SignIn({ handleSignIn }) {
             <label htmlFor="email">
                Email:
                <div className="si-email">
-               <img src={email} alt="email-icon" />
-               <input
-               
-                  type="text"
-                  name="email"
-                  id="email"
-                  placeholder="Enter email address"
-                  required
-                 
-               />
+                  <img src={email} alt="email-icon" />
+                  <input
+                     type="text"
+                     name="email"
+                     id="email"
+                     placeholder="Enter email address"
+                     required
+                  />
                </div>
             </label>
             <label htmlFor="password">
                Password:
                <div className="si-password">
-               <img src={lock} alt="password icon"/>
-               <input
-                  type="password"
-                  name="password"
-                  id="password"
-                  placeholder="Password"
-                  required
-               />
+                  <img src={lock} alt="password icon" />
+                  <input
+                     type="password"
+                     name="password"
+                     id="password"
+                     placeholder="Password"
+                     required
+                  />
                </div>
             </label>
             <Link to="/" className="si-link">
