@@ -9,13 +9,23 @@
 }
 
 .n-container {
-  position: absolute;
-  top: 2rem;
+ position: fixed;
+height: 5rem;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
+.n-container-2{
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .n-container .material-icons {
   display: none;
 }
@@ -26,7 +36,6 @@
 .n-menu ul {
   display: flex;
   flex-direction: row;
-  margin-left: 5rem;
 }
 
 .n-menu li {
