@@ -21,7 +21,7 @@ function Nav({ SignInIsTrue, handleSignIn }) {
             <div className="n-logo">
                <img src={Jobby} alt="logo" />
             </div>
-            <span class="material-icons">menu</span>
+
             <div className="n-menu">
                <ul>
                   <Link to="/" className="n-jobsearch">
@@ -35,34 +35,37 @@ function Nav({ SignInIsTrue, handleSignIn }) {
                   <li>For Companies</li>
                </ul>
             </div>
-            {SignInIsTrue ? (
-               <div className="n-icons">
-                  <Link to="/notification" className="n-links">
-                     {" "}
-                     <IoNotifications />
-                  </Link>
-                  <Link to="/message" className="n-links">
-                     <MdEmail />
-                  </Link>
-                  <IoPerson
-                     onClick={() => {
-                        setShowProfile((ShowProfile) => !ShowProfile);
-                     }}
-                     className="n-links"
-                  />
-                  {ShowProfile && (
-                     <ProfileDropdown handleSignIn={handleSignIn} />
-                  )}
-               </div>
-            ) : (
-               <Link to="/signin">
-                  <div>
-                     <span>SignIn</span>
-                     <span>/</span>
-                     <span>Register</span>
+            <div className="n-signin-hamburger">
+               {SignInIsTrue ? (
+                  <div className="n-icons">
+                     <Link to="/notification" className="n-links">
+                        {" "}
+                        <IoNotifications />
+                     </Link>
+                     <Link to="/message" className="n-links">
+                        <MdEmail />
+                     </Link>
+                     <IoPerson
+                        onClick={() => {
+                           setShowProfile((ShowProfile) => !ShowProfile);
+                        }}
+                        className="n-links"
+                     />
+                     {ShowProfile && (
+                        <ProfileDropdown handleSignIn={handleSignIn} />
+                     )}
                   </div>
-               </Link>
-            )}
+               ) : (
+                  <Link to="/signin">
+                     <div>
+                        <span>SignIn</span>
+                        <span>/</span>
+                        <span>Register</span>
+                     </div>
+                  </Link>
+               )}
+               <span class="material-icons">menu</span>
+            </div>
          </div>
       </section>
    );
