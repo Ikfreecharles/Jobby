@@ -24,7 +24,7 @@ function Nav({ SignInIsTrue, handleSignIn }) {
        <div className="n-logo">
         <img src={Jobby} alt="logo"/>
       </div>
-      <span class="material-icons">menu</span>
+     
       <div className="n-menu">
         <ul>
           <Link to="/" className="n-jobsearch">
@@ -63,8 +63,9 @@ function Nav({ SignInIsTrue, handleSignIn }) {
             <span>Register</span>
           </div>
         </Link>
+        
       )}
-
+ <span class="material-icons">menu</span>
        </div>
      
     </section>
