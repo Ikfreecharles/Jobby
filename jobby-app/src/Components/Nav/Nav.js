@@ -19,8 +19,9 @@ function Nav({ SignInIsTrue, handleSignIn }) {
     };
   }, []);
   return (
-    <section className="container n-container">
-      <div className="n-logo">
+    <section className="n-container">
+       <div className="n-container-2">
+       <div className="n-logo">
         <img src={Jobby} alt="logo"/>
       </div>
       <span class="material-icons">menu</span>
@@ -63,6 +64,9 @@ function Nav({ SignInIsTrue, handleSignIn }) {
           </div>
         </Link>
       )}
+
+       </div>
+     
     </section>
   );
 }
