@@ -71,3 +71,35 @@ input:-webkit-autofill:active {
    -webkit-transition-delay: 9999s;
    transition-delay: 9999s;
 }
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 200px) {
+   html, body{
+      font-size: 10px;
+   }
+}
+@media only screen and (min-width: 760px) {
+      html, body{
+         font-size: 12px;
+      }
+}
+
+@media only screen and (min-width: 1200px) {
+      html, body{
+         font-size: 13px;
+      }
+}
+
+
+@media only screen and (min-width: 1824px) {
+   html, body{
+      font-size: 16px;
+   }
+}
