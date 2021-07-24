@@ -12,7 +12,7 @@ function SignIn({ handleSignIn }) {
    };
    return (
       <article className="si-outer-div">
-         <form>
+         <form className="si-form">
             <label htmlFor="email">
                Email:
                <div className="si-email">
