@@ -1,0 +1,33 @@
+@media only screen and (min-width: 200px) and (max-width: 420px) {
+
+  .n-container .n-menu {
+    display: none;
+  }
+
+  .n-menu {
+    width: 100%;
+  }
+  .n-menu ul {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.6);
+   
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 20px;
+  
+  }
+
+  .n-menu ul li {
+    color: white;
+    padding-bottom: 3rem;
+    
+   justify-content: center;
+   margin: 0 auto;
+  }
+  .n-container .material-icons {
+    display: block;
+  }
+}

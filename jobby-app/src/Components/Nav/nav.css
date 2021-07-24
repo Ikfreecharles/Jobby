@@ -1,47 +1,46 @@
 .n-container .n-logo {
-   min-width: 20rem;
-   height: 12%;
+  width: 5rem;
 }
 
 .n-container .n-logo img {
-   object-fit: contain;
-   width: 100%;
-   height: 100%;
-   padding-top: 3rem;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
 .n-container {
-   width: 100%;
-   height: 0rem;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
+  position: absolute;
+  top: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
+.n-container .material-icons {
+  display: none;
+}
 .n-menu {
-   width: 60%;
-   padding-top: 4rem;
+  width: 60%;
 }
 
 .n-menu ul {
-   display: flex;
-   flex-direction: row;
-
-   margin-left: 20rem;
+  display: flex;
+  flex-direction: row;
+  margin-left: 5rem;
 }
 
 .n-menu li {
-   list-style: none;
-   margin-right: 5rem;
-   font-size: 1rem;
-   font-weight: bold;
-   text-transform: uppercase;
-   letter-spacing: 1px;
+  list-style: none;
+  margin-right: 5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .n-menu ul .n-jobsearch {
-   text-decoration: none;
+  text-decoration: none;
 }
 .n-menu li:hover {
-   cursor: pointer;
-   color: var(--brand-skyblue);
+  cursor: pointer;
+  color: var(--brand-skyblue);
 }
