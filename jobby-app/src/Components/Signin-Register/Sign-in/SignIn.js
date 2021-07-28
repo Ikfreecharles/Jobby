@@ -1,11 +1,14 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import AppContext from "../../../ContextApi/app-context";
 
 //import component and css
 import "./signIn.css";
 import email from "../../../Images/Icons folders/email.png";
 import lock from "../../../Images/Icons folders/lock.png";
 
-function SignIn({ handleSignIn }) {
+function SignIn() {
+   const { handleSignIn } = useContext(AppContext);
    const handleFormSubmit = (e) => {
       e.preventDefault();
       handleSignIn(true);

@@ -1,4 +1,5 @@
-import { useRef } from "react";
+import { useRef, useContext } from "react";
+import AppContext from "../../ContextApi/app-context";
 
 //import components and css
 import "./landingPage.css";
@@ -40,6 +41,9 @@ import bg4 from "../../Images/bg4.jpeg";
 
 function LandingPage() {
    const imgRef = useRef();
+   const { jobTitleInput, setjobTitleInput, handleSubmit } =
+      useContext(AppContext);
+
    /* const imgArray = [bg1, bg2, bg3, bg4];
    
 
@@ -59,7 +63,7 @@ function LandingPage() {
          <section className="bg-image-container" ref={imgRef}>
             <div className="lp-items-container">
                <h1>Jobby is Europe's Job search platform for student.</h1>
-               <form className="lp-input-container">
+               <form className="lp-input-container" onSubmit={handleSubmit}>
                   <label htmlFor="what-job">
                      What:
                      <input
@@ -67,6 +71,9 @@ function LandingPage() {
                         name="job-search"
                         id="what-job"
                         placeholder="Job title"
+                        onChange={(e) => setjobTitleInput(e.target.value)}
+                        value={jobTitleInput}
+                        required
                      />
                   </label>
                   <label htmlFor="where-job">

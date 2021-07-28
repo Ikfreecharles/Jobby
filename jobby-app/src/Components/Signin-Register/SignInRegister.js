@@ -7,7 +7,7 @@ import Register from "./Register/Register";
 import Jobby from "../../Images/Jobby.png";
 import AdobeStock_269986305 from "../../Images/AdobeStock_269986305.jpeg";
 
-function SignInRegister({ handleSignIn }) {
+function SignInRegister() {
    const [Option, setOption] = useState("signin");
    const handleClick = (option) => {
       if (option === "signin") {
@@ -51,7 +51,7 @@ function SignInRegister({ handleSignIn }) {
             <div className="sir-logo">
                <img src={Jobby} alt="logo" />
             </div>
-            {Option === "signin" && <SignIn handleSignIn={handleSignIn} />}
+            {Option === "signin" && <SignIn />}
             {Option === "register" && <Register />}
          </div>
       </article>

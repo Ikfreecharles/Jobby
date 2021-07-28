@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import { Link } from "react-router-dom";
+import AppContext from "../../ContextApi/app-context";
 
 //import components and css
 import "./nav.css";
@@ -9,14 +10,24 @@ import { MdEmail } from "react-icons/md";
 import ProfileDropdown from "./Profile-Dropdown/ProfileDropdown";
 import Jobby from "../../Images/Jobby.png";
 
-function Nav({ SignInIsTrue, handleSignIn }) {
+function Nav() {
+   const { SignInIsTrue, handleSignIn } = useContext(AppContext);
    const [ShowProfile, setShowProfile] = useState(false);
+   const [pageIsScrolled, setpageIsScrolled] = useState(false);
+
+   window.onscroll = () => {
+      setpageIsScrolled(window.pageYOffset === 0 ? false : true);
+      return () => (window.onscroll = null);
+   };
 
    useEffect(() => {
       setShowProfile(false);
    }, []);
    return (
-      <section className="n-container">
+      <section
+         className="n-container"
+         style={{ backgroundColor: pageIsScrolled && "var(--brand-white)" }}
+      >
          <div className="n-container-2">
             <div className="n-logo">
                <img src={Jobby} alt="logo" />
@@ -36,10 +47,9 @@ function Nav({ SignInIsTrue, handleSignIn }) {
                </ul>
             </div>
             <div className="n-signin-hamburger">
-               {SignInIsTrue ? (
+               {!SignInIsTrue ? (
                   <div className="n-icons">
                      <Link to="/notification" className="n-links">
-                        {" "}
                         <IoNotifications />
                      </Link>
                      <Link to="/message" className="n-links">

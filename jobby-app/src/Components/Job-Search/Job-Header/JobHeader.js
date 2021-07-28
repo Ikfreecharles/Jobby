@@ -1,12 +1,15 @@
+import { useContext } from "react";
 import "./jobHeader.css";
+import AppContext from "../../../ContextApi/app-context";
 
 function JobHeader() {
+   const { data, jobTitleInput } = useContext(AppContext);
    return (
       <section className="jh-main">
-         <h2>Java jobs</h2>
+         <h2>{jobTitleInput}</h2>
          <div className="jh-sort-result">
             <p>Sort by: Date posted</p>
-            <p>Result 1-15 of 1489</p>
+            <p>Results: {data.length}</p>
          </div>
       </section>
    );

@@ -1,6 +1,6 @@
 @media only screen and (max-width: 850px) {
    .n-container .n-menu {
-      display: nne;
+      display: none;
    }
    .n-container .n-logo {
    }

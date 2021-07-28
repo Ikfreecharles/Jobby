@@ -1,4 +1,6 @@
+//import css and components
 import "./profileDropdown.css";
+import { MdFavorite } from "react-icons/md";
 
 function ProfileDropdown({ handleSignIn }) {
    return (
@@ -8,7 +10,7 @@ function ProfileDropdown({ handleSignIn }) {
             <p>Profile</p>
          </div>
          <div className="pd-item">
-            <img src="" alt="" />
+            <MdFavorite className="pd-icons" />
             <p>Favourite Jobs</p>
          </div>
          <div className="pd-item">
